@@ -19,7 +19,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License: GPLv2
 ExclusiveArch: %ix86
 BuildRequires: gtk2-devel
-BuildRequires: SDL1.2-devel
+BuildRequires: SDL-devel
 BuildRequires: nasm
 
 Conflicts: gens-gs
