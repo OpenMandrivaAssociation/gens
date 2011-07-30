@@ -22,6 +22,8 @@ BuildRequires: gtk2-devel
 BuildRequires: SDL1.2-devel
 BuildRequires: nasm
 
+Conflicts: gens-gs
+
 %description
 Gens is a GPL emulator for the genesis, ported from win32
 to BeOS and linux. It was the fastest on win32, and is pretty fast on linux.
