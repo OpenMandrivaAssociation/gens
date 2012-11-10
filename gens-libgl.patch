@@ -1,0 +1,20 @@
+--- configure
++++ configure
+@@ -5014,7 +5014,7 @@
+   echo $ECHO_N "(cached) $ECHO_C" >&6
+ else
+   ac_check_lib_save_LIBS=$LIBS
+-LIBS="-lc  $LIBS"
++LIBS="-lc -lGL  $LIBS"
+ cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */
+ _ACEOF
+@@ -5074,7 +5074,7 @@
+ #define HAVE_LIBC 1
+ _ACEOF
+ 
+-  LIBS="-lc $LIBS"
++  LIBS="-lc -lGL $LIBS"
+ 
+ fi
+ 

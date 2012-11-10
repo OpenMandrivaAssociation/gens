@@ -1,0 +1,36 @@
+--- src/gens/emulator/ui_proxy.c
++++ src/gens/emulator/ui_proxy.c
+@@ -183,7 +183,8 @@
+ 	// if( (Old_Rend==NORMAL && Num==DOUBLE)||(Old_Rend==DOUBLE && Num==NORMAL) ||Opengl)
+ 	// this doesn't cover hq2x etc. properly. Let's just always refresh.
+ 	Refresh_video();
+-	 
++	
++	return 0;
+ }
+ 
+ int
+--- src/gens/gens_core/cpu/68k/cpu_68k.c
++++ src/gens/gens_core/cpu/68k/cpu_68k.c
+@@ -239,8 +239,8 @@
+   memset (Ram_Word_2M, 0, 256 * 1024);
+   memset (Ram_Word_1M, 0, 256 * 1024);
+ 
+-  memset (COMM.Command, 0, 8 * 5);
+-  memset (COMM.Status, 0, 8 * 5);
++  memset (COMM.Command, 0, 8 * sizeof(unsigned short));
++  memset (COMM.Status, 0, 8 * sizeof(unsigned short));
+ 
+   LED_Status = S68K_State = S68K_Mem_WP = S68K_Mem_PM = Ram_Word_State = 0;
+   COMM.Flag = Init_Timer_INT3 = Timer_INT3 = Int_Mask_S68K = 0;
+--- src/gens/sdllayer/g_sdlsound.c
++++ src/gens/sdllayer/g_sdlsound.c
+@@ -178,7 +178,7 @@
+ 	lpDSBuffer->GetCurrentPosition(&R, NULL);
+ 	return(R / (Seg_Lenght * Bytes_Per_Unit));
+ 	*/
+-	
++	return 0;
+ }
+ 
+ int Lots_In_Audio_Buffer(void)
