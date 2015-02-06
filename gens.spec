@@ -1,7 +1,7 @@
 Name:		gens
 Summary:	Sega Genesis/MegaDrive emulator
 Version:	2.15.5
-Release:	3
+Release:	4
 Group:		Emulators
 License:	GPLv2
 Url:		http://sourceforge.net/projects/gens/
