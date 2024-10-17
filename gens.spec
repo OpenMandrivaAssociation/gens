@@ -4,7 +4,7 @@ Version:	2.15.5
 Release:	4
 Group:		Emulators
 License:	GPLv2
-Url:		http://sourceforge.net/projects/gens/
+Url:		https://sourceforge.net/projects/gens/
 Source0:	http://sourceforge.net/projects/gens/files/Gens%20Source%20Code/Gens%20%{version}/%{name}-%{version}.tar.gz
 Source1:	%{name}.16.png.bz2
 Source2:	%{name}.32.png.bz2
