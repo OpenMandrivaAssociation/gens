@@ -12,6 +12,11 @@ Source3:	%{name}.48.png.bz2
 Patch1:		gens-libgl.patch
 Patch2:		gens-rpmlint.patch
 Patch3:		gens-2.15.5-strings.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(sdl)
